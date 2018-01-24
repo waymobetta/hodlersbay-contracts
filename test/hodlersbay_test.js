@@ -21,7 +21,7 @@ contract('HodlersBay', (accounts) => {
 			from: sender
 		}
 		await contract.store.sendTransaction(0, tx)
-		const myHodlersBayBal = await contract.HodlersBayBalance.call(sender)
+		const myHodlersBayBal = await contract.hodlersBayBalance.call(sender)
 		assert.equal(myHodlersBayBal.c[0]/10000, 5, 'stores 5 ether with 0 second timelock')
 	})
 	it('should check to see if [0 second] timelock is in place', async () => {
@@ -36,7 +36,7 @@ contract('HodlersBay', (accounts) => {
 			from: sender
 		}
 		await contract.withdraw.sendTransaction(5, tx)
-		const myHodlersBayBal	= await contract.HodlersBayBalance.call(sender)
+		const myHodlersBayBal	= await contract.hodlersBayBalance.call(sender)
 		assert.equal(myHodlersBayBal.c[0]/10000, 0, 'dispenses 5 ether from contract')
 	})
 })

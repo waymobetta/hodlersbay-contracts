@@ -58,7 +58,7 @@ contract HodlersBay {
     }
     
     // GETTERS
-    function HodlersBayBalance(address _addr) public returns (uint256) {
+    function hodlersBayBalance(address _addr) public returns (uint256) {
         return accountBalance[_addr];
     }
     
