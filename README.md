@@ -14,7 +14,7 @@ Enough of this pirate talk, what am I getting myself into and how can I make mon
 When an account decides to withdraw all of their funds from Hodlers' Bay they will be forced to walk the plank, and will be robbed of all the loot they've acquired at Hodlers' Bay. The loot stolen will then be dispersed to all remaining hodlers in the bay as stated below.
 
 ### *Black Spot*
-When an account is forced to _Walk The Plank_, there will be a permanent black spot put on that account which will prevent it from every performing another transaction in Hodlers' Bay.
+When an account is forced to _Walk The Plank_, there will be a permanent black spot put on that account which will prevent it from ever performing another transaction in Hodlers' Bay.
 
 ### *"No Prey, No Pay"*
 A common pirate law meaning a crew received no wages, but rather shared whatever loot was taken. The only time a "Yo, ho ho!" is warrented is when loot is being redistributed after the Hodlers' Bay rids itself of a less-than-worthy soul.
