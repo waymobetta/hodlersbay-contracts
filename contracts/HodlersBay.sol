@@ -90,32 +90,32 @@ contract HodlersBay {
         return shareOfTheRiches;
     }
     
-    function deathAndTaxes(uint256 _amount) view internal returns (uint256) {
+    function deathAndTaxes(uint256 _amount) internal returns (uint256) {
         uint256 loot = _amount - maroonerTax;
         return loot;
     }
     
     // GETTERS
-    function getHodlers() view public returns (address[]) {
+    function getHodlers() public returns (address[]) {
         return hodlers;
     }
     
-    function hodlersCount() view public returns (uint256) {
+    function hodlersCount() public returns (uint256) {
         return hodlers.length;
     }
     
-    function hodlersBayBalance(address _addr) view public returns (uint256) {
+    function hodlersBayBalance(address _addr) public returns (uint256) {
         return accountBalance[_addr];
     }
     
-    function getTimelock() view public returns (uint256, bool) {
+    function getTimelock() public returns (uint256, bool) {
         if (timelocks[msg.sender] > 0) {
             return (timelocks[msg.sender], true);
         }
         return (timelocks[msg.sender], false);
     }
     
-    function isTimeUp() view public returns (bool) {
+    function isTimeUp() public returns (bool) {
         if (now >= timelocks[msg.sender] * 1 seconds) {
             return true;
         }

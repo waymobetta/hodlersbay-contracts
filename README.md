@@ -11,7 +11,7 @@ Enough of this pirate talk, what am I getting myself into and how can I make mon
 
 
 ### *Walk The Plank*
-When an account decides to withdraw all of their funds from Hodlers' Bay they will be forced to walk the plank, and will be robbed of all the loot they've acquired at Hodlers' Bay. The loot stolen will then be dispersed to all remaining hodlers in the bay as stated below.
+When an account decides to withdraw all of their funds from Hodlers' Bay they will be forced to "walk the plank", and will be robbed of all the loot they've acquired at Hodlers' Bay. The loot stolen will then be dispersed to all remaining hodlers in the bay as stated below.
 
 ### *Black Spot*
 When an account is forced to _Walk The Plank_, there will be a permanent black spot put on that account which will prevent it from ever performing another transaction in Hodlers' Bay.
