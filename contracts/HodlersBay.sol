@@ -22,9 +22,9 @@ contract HodlersBay {
     }
     
     // EVENTS
-    event _welcomeAboard(address indexed _addr, uint256 _value, uint256 _timestamp);
-    event _maroon(address indexed _addr, uint256 _value, uint256 _timestamp);
-    event _walkThePlank(address indexed _addr, uint256 _value, uint256 _timestamp);
+    event _WelcomeAboard(address indexed _addr, uint256 _value, uint256 _timestamp);
+    event _Maroon(address indexed _addr, uint256 _value, uint256 _timestamp);
+    event _WalkThePlank(address indexed _addr, uint256 _value, uint256 _timestamp);
     
     // CONSTRUCTOR
     function HodlersBay() {
@@ -47,7 +47,7 @@ contract HodlersBay {
         // set timelock
         setTimelock(_secsAfter);
         // fire store event 
-        _welcomeAboard(msg.sender, storedAmount, block.timestamp);
+        _WelcomeAboard(msg.sender, storedAmount, block.timestamp);
     }
     
     
@@ -62,7 +62,7 @@ contract HodlersBay {
         // award Black Spot to address
         hasBlackSpot[msg.sender] = true;
         // fire black spot event => walk the plank
-        _walkThePlank(msg.sender, maroonerTax, block.timestamp);
+        _WalkThePlank(msg.sender, maroonerTax, block.timestamp);
         // require address requesting funds to have a hodl balance greater than amount requested 
         require(whateversLeft <= accountBalance[msg.sender]);
         // return whateversLeft to the caller
@@ -70,7 +70,7 @@ contract HodlersBay {
         // subtract amount request (after deathAndTaxes) from account balance 
         accountBalance[msg.sender] -= whateversLeft;
         // fire withdraw event
-        _maroon(msg.sender, whateversLeft, block.timestamp);
+        _Maroon(msg.sender, whateversLeft, block.timestamp);
         // distribute marooner's tax amongst other hodlers in the bay
         distributeLoot();
         return whateversLeft;
